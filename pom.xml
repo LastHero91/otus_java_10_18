@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.otus</groupId>
+    <artifactId>otus_java_10_2018</artifactId>
+    <version>1.0-RELEASE</version>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>H011maven</module>
+        <module>H021memory</module>
+        <module>H031myArrayList</module>
+        <module>H041myTestFramework</module>
+        <module>H051GC</module>
+        <module>H061cache</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.java.version>1.11</maven.java.version>
+        <maven.compiler.source>${maven.java.version}</maven.compiler.source>
+        <maven.compiler.target>${maven.java.version}</maven.compiler.target>
+        <maven.compiler.release>${maven.java.version}</maven.compiler.release>
+    </properties>
+
+</project>

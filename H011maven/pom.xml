@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>H01.1-maven</name>
+    <description>Code example for H01.1-maven</description>
+
+    <developers>
+        <developer>
+            <name>LastHero91</name>
+        </developer>
+    </developers>
+
+    <parent>
+        <artifactId>otus_java_10_2018</artifactId>
+        <groupId>ru.otus</groupId>
+        <version>1.0-RELEASE</version>
+    </parent>
+
+    <artifactId>H011maven</artifactId>
+
+    <properties>
+        <maven.java.version>1.10</maven.java.version>
+        <maven.compiler.source>${maven.java.version}</maven.compiler.source>
+        <maven.compiler.target>${maven.java.version}</maven.compiler.target>
+        <maven.compiler.release>${maven.java.version</maven.compiler.release>
+        <com.google.guava.version>27.0-jre</com.google.guava.version>
+        <basedir>otus_java_2018_10/H011maven</basedir>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${com.google.guava.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.name}</finalName>
+        <directory>target</directory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <appendAssemblyId>true</appendAssemblyId>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>ru.otus.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>otus_java_10_2018</artifactId>
+        <groupId>ru.otus</groupId>
+        <version>1.0-RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>H061cache</artifactId>
+
+    <name>H06.1-cache</name>
+    <description>Code example for H06.1-cache</description>
+
+    <developers>
+        <developer>
+            <name>LastHero91</name>
+        </developer>
+    </developers>
+
+</project>
