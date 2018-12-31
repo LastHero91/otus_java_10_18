@@ -1,0 +1,8 @@
+[0.014s][info][gc] Using Serial
+[0.014s][info][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+[0.426s][info][gc,start     ] GC(0) Pause Young (Allocation Failure)
+[0.626s][info][gc,heap      ] GC(0) DefNew: 139776K->17472K(157248K)
+[0.626s][info][gc,heap      ] GC(0) Tenured: 0K->106734K(349568K)
+[0.627s][info][gc,metaspace ] GC(0) Metaspace: 10376K->10376K(1058816K)
+[0.627s][info][gc           ] GC(0) Pause Young (Allocation Failure) 136M->121M(494M) 200.501ms
+[0.627s][info][gc,cpu       ] GC(0) User=0.16s Sys=0.05s Real=0.20s

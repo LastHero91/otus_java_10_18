@@ -1,0 +1,23 @@
+[0.013s][info][gc] Using Serial
+[0.013s][info][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+[0.435s][info][gc,start     ] GC(0) Pause Young (Allocation Failure)
+[0.637s][info][gc,heap      ] GC(0) DefNew: 139776K->17472K(157248K)
+[0.637s][info][gc,heap      ] GC(0) Tenured: 0K->106734K(349568K)
+[0.637s][info][gc,metaspace ] GC(0) Metaspace: 10376K->10376K(1058816K)
+[0.637s][info][gc           ] GC(0) Pause Young (Allocation Failure) 136M->121M(494M) 201.735ms
+[0.637s][info][gc,cpu       ] GC(0) User=0.14s Sys=0.06s Real=0.20s
+[40.039s][info][gc,start     ] GC(1) Pause Young (Allocation Failure)
+[40.270s][info][gc,heap      ] GC(1) DefNew: 157248K->17471K(157248K)
+[40.270s][info][gc,heap      ] GC(1) Tenured: 106734K->229466K(349568K)
+[40.270s][info][gc,metaspace ] GC(1) Metaspace: 14181K->14181K(1062912K)
+[40.270s][info][gc           ] GC(1) Pause Young (Allocation Failure) 257M->241M(494M) 230.430ms
+[40.270s][info][gc,cpu       ] GC(1) User=0.20s Sys=0.02s Real=0.23s
+[300.339s][info][gc,heap,exit ] Heap
+[300.339s][info][gc,heap,exit ]  def new generation   total 157248K, used 63508K [0x00000000e0000000, 0x00000000eaaa0000, 0x00000000eaaa0000)
+[300.339s][info][gc,heap,exit ]   eden space 139776K,  32% used [0x00000000e0000000, 0x00000000e2cf51f0, 0x00000000e8880000)
+[300.339s][info][gc,heap,exit ]   from space 17472K,  99% used [0x00000000e8880000, 0x00000000e998fff8, 0x00000000e9990000)
+[300.339s][info][gc,heap,exit ]   to   space 17472K,   0% used [0x00000000e9990000, 0x00000000e9990000, 0x00000000eaaa0000)
+[300.339s][info][gc,heap,exit ]  tenured generation   total 349568K, used 229466K [0x00000000eaaa0000, 0x0000000100000000, 0x0000000100000000)
+[300.339s][info][gc,heap,exit ]    the space 349568K,  65% used [0x00000000eaaa0000, 0x00000000f8ab6ac0, 0x00000000f8ab6c00, 0x0000000100000000)
+[300.339s][info][gc,heap,exit ]  Metaspace       used 14778K, capacity 15399K, committed 15616K, reserved 1062912K
+[300.339s][info][gc,heap,exit ]   class space    used 1511K, capacity 1716K, committed 1792K, reserved 1048576K

@@ -13,6 +13,7 @@ class Benchmark implements BenchmarkMBean {
 
     void run() {
         List<Integer> list = new LinkedList<>();
+        long timer = System.currentTimeMillis();
         for (int idx = 0; idx < loopCounter; idx++) {
             int local = size;
             for (int i = 0; i < local; i++) {
@@ -20,6 +21,11 @@ class Benchmark implements BenchmarkMBean {
                 list.add(value);
                 if (i % 15 == 0) {
                     list.set(i, null);
+                }
+                if(timer+300*1000<System.currentTimeMillis()){
+                    System.out.println("loopCounter:"+loopCounter);
+                    System.out.println("i:"+i);
+                    break;
                 }
             }
             //Thread.sleep(25);
