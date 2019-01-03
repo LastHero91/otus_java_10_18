@@ -1,4 +1,4 @@
-package com.k381;
+package ru.otus;
 
 public interface BenchmarkMBean {
     int getSize();

@@ -1,15 +1,8 @@
-package com.k381;
-
-import com.sun.management.GarbageCollectionNotificationInfo;
+package ru.otus;
 
 import javax.management.MBeanServer;
-import javax.management.NotificationEmitter;
-import javax.management.NotificationListener;
 import javax.management.ObjectName;
-import javax.management.openmbean.CompositeData;
-import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
-import java.util.List;
 
 /**
  * Created by tully.

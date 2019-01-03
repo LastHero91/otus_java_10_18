@@ -1,6 +1,6 @@
-package com.k381;
+package ru.otus;
 
-import com.k381.utils.TestRunner;
+import ru.otus.utils.TestRunner;
 
 public class Main {
     public static void main(String[] args) {

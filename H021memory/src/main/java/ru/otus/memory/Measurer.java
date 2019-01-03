@@ -1,4 +1,4 @@
-package com.k381.memory;
+package ru.otus.memory;
 
 import java.util.function.Supplier;
 

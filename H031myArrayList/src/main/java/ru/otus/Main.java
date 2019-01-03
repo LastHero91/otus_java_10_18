@@ -1,8 +1,7 @@
-package com.k381;
+package ru.otus;
 
-import com.k381.utils.MyArrayList;
+import ru.otus.utils.MyArrayList;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 

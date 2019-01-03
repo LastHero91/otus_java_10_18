@@ -1,9 +1,9 @@
-package com.k381.utils;
+package ru.otus.utils;
 
-import com.k381.utils.testAnnotations.After;
-import com.k381.utils.testAnnotations.Before;
-import com.k381.utils.testAnnotations.Order;
-import com.k381.utils.testAnnotations.Test;
+import ru.otus.utils.testAnnotations.After;
+import ru.otus.utils.testAnnotations.Before;
+import ru.otus.utils.testAnnotations.Order;
+import ru.otus.utils.testAnnotations.Test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

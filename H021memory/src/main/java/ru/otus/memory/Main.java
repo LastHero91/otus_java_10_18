@@ -1,4 +1,4 @@
-package com.k381.memory;
+package ru.otus.memory;
 
 public class Main {
     public static void main(String[] args) {

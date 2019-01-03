@@ -1,7 +1,6 @@
-package com.k381.utils;
+package ru.otus.utils;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class MyArrayList<E> implements List<E>, RandomAccess {
 

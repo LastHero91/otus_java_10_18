@@ -1,4 +1,4 @@
-package com.k381;
+package ru.otus;
 
 import java.lang.ref.SoftReference;
 import java.util.*;

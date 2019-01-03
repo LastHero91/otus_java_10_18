@@ -27,7 +27,7 @@
         <maven.compiler.target>${maven.java.version}</maven.compiler.target>
         <maven.compiler.release>${maven.java.version</maven.compiler.release>
         <com.google.guava.version>27.0-jre</com.google.guava.version>
-        <basedir>otus_java_2018_10/H011maven</basedir>
+        <basedir>otus_java_10_18/H011maven</basedir>
     </properties>
 
     <dependencies>
