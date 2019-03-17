@@ -25,30 +25,30 @@ public class SimpleCounters {
         while (true) {
             while(count < limit) {
                 if (flag) {
-                    waitBlock(++count);
+                    waitMethod(++count);
                 } else {
-                    notifyBlock(count);
+                    notifyMethod(count);
                 }
             }
             limit = 1;
             while(count > limit) {
                 if (flag) {
-                    waitBlock(--count);
+                    waitMethod(--count);
                 } else {
-                    notifyBlock(count);
+                    notifyMethod(count);
                 }
             }
             limit = 10;
         }
     }
 
-    private synchronized void notifyBlock(int count) {
+    private synchronized void notifyMethod(int count) {
         System.out.println(count);
         flag = true;
         notifyAll();
     }
 
-    private synchronized void waitBlock(int count) {
+    private synchronized void waitMethod(int count) {
         try {
             TimeUnit.SECONDS.sleep(1L);
             System.out.println(count);

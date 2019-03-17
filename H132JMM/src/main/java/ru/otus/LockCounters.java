@@ -17,7 +17,6 @@ public class LockCounters {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         startCallable(executorService, true);
         startCallable(executorService, false);
-        startCallable(executorService, true);
     }
 
     private void startCallable(ExecutorService executorService, boolean isUp) {
