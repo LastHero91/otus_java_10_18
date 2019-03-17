@@ -29,7 +29,6 @@
         <com.google.guava.version>27.0-jre</com.google.guava.version>
         <basedir>otus_java_10_18/H011maven</basedir>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.google.guava</groupId>

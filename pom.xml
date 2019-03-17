@@ -16,6 +16,7 @@
         <module>H041myTestFramework</module>
         <module>H051GC</module>
         <module>H061cache</module>
+        <module>H132JMM</module>
     </modules>
 
     <properties>
