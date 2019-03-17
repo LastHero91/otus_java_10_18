@@ -14,15 +14,15 @@ public class LockCounters {
     }
 
     private void go() {
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
         startCallable(executorService, true);
         startCallable(executorService, false);
     }
 
     private void startCallable(ExecutorService executorService, boolean isUp) {
-        Future<String> resultInFuture2 = executorService.submit(() -> print(isUp));
+        Future<String> resultInFuture = executorService.submit(() -> print(isUp));
         try {
-            resultInFuture2.get();
+            resultInFuture.get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
