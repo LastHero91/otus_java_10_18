@@ -4,8 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 public class SimpleCounters {
 
-    private int count = 0;
-    private int limit = 10;
     private boolean flag;
 
     public static void main(String[] args) {
@@ -23,39 +21,35 @@ public class SimpleCounters {
     private synchronized void print(boolean isUp) {
         flag = isUp;
         while (true) {
-            while(count < limit) {
-                if (flag) {
-                    waitMethod(++count);
-                } else {
-                    notifyMethod(count);
-                }
-            }
-            limit = 1;
-            while(count > limit) {
-                if (flag) {
-                    waitMethod(--count);
-                } else {
-                    notifyMethod(count);
-                }
-            }
-            limit = 10;
+            cycleMethod(1, 10, 1);
+            cycleMethod(10, 1, -1);
         }
     }
 
-    private synchronized void notifyMethod(int count) {
-        System.out.println(count);
-        flag = true;
-        notifyAll();
+    private void cycleMethod(int start, int limit, int sign) {
+        for (; sign < 0 ? start > limit : start < limit; start += sign) {
+            if (flag) {
+                waitMethod(start);
+            } else {
+                notifyMethod(start);
+            }
+        }
     }
 
-    private synchronized void waitMethod(int count) {
+    private void waitMethod(int count) {
         try {
             TimeUnit.SECONDS.sleep(1L);
             System.out.println(count);
-            flag = false;
+            flag = !flag;
             wait();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    private void notifyMethod(int count) {
+        System.out.println(count);
+        flag = !flag;
+        notifyAll();
     }
 }
